@@ -1,22 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
-import { App, AddCustomer, EditCustomer, DeleteCustomer } from './App';
+import { App } from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
   <React.StrictMode>
-    <Router>
-  <Routes>
-     <Route exact path="/" component={App}/>
-   <Route exact path="/AddCustomer" component={AddCustomer}/>
-   <Route exact path="/EditCustomer" component={EditCustomer}/>
-   <Route exact path="/DeleteCustomer" component={DeleteCustomer}/>
- </Routes>
-</Router>
     <App />
   </React.StrictMode>
   
